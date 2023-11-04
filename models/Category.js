@@ -11,16 +11,10 @@ Category.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
-      validate: {
-        isNumeric: true,
-      },
     },
     category_name: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        isAlpha: true,
-      }
     }
   },
   {

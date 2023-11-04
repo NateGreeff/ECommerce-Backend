@@ -29,9 +29,6 @@ Product.init(
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      validate: {
-        isNumeric: true,
-      }
     },
     category_id: {
       type: DataTypes.INTEGER,
@@ -44,7 +41,7 @@ Product.init(
       validate: {
         isNumeric: true,
       }
-    }
+    },
   },
   {
     sequelize,
